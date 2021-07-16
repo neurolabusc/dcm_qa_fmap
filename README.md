@@ -28,6 +28,15 @@ dcm_qa_fmap is a simple DICOM to NIfTI validator script and dataset. This reposi
   * model: (0008,1090) Achieva dStream
   * version: (0018,1020) 5.3.0\5.3.0.3
 
+* Siemens 
+  * source: Chris Rorden of the [McCausland Center for Brain Imaging](https://www.mccauslandcenter.sc.edu/), Prisma fit VE11C
+  * [CSA header](https://nipy.org/nibabel/dicom/siemens_csa.html) tag `tSequenceFileName` reports `%SiemensSeq%\\gre_field_mapping`
+  * version: (0018,1020) syngo MR E11
+  * Three Series were acquired. Reconstruction set to `Magnitude/Phase` results in two series (2,3) where the first includes the magnitude images for each echo time, and the second is the phase difference image. Note the latter includes [BIDS fields](https://github.com/rordenlab/dcm2niix/issues/139) `EchoTime1` and `EchoTime2` so you can determine the delta-TE for preprocessing. Another series (4) was acquired only an phase map was requested, and only the difference phase map is stored. The final series (5) was acquired with only magnitude reconstruction requested, and the result is two magnitude images, one for each echo. Note that for [FSL FUGUE](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FUGUE) you will want to ensure reconstruction of **both** the phase and magnitude images.
+  * Be aware that when both the magnitude and phase are reconstructed, the magnitude images use the identical DICOM image instance number (0020,0013) for each echo. You can see this in the file names which use the echo number and instance number, resulting in `e1_01.dcm`...`e1_36.dcm` and`e2_01.dcm`...`e2_36.dcm`. Unfortunately, many PACS systems will sort based on instance numbers and overwrite some images from the first echo with those from the second, leading to [data loss](https://neurostars.org/t/dcm2niix-node-nonzero-exit-code/1375/7). Note that the DICOM standard does not require that instance numbers are unique, so these images are technically legal. However, they are incompatible with the assumptions of many tools.
+  * In brief, make sure your Siemens console is set up to Reconstruct **both Magnitude** (see image below for Siemens PDF) and make sure that all subsequent transfer and storage of these images does not delete magnitude images that share instance numbers.
+  * ![Siemens Fieldmap Setup](SiemensPDF.png)
+ 
 ## License
 
 This software and images are open source and were acquired by National Institutes of Health. The the code is covered by the [2-clause BSD license](https://opensource.org/licenses/BSD-2-Clause).
@@ -36,6 +45,9 @@ This software and images are open source and were acquired by National Institute
 
 12-April-2021
  - Initial public release
+
+16-July-2021
+ - Siemens data
 
 ## Running
 

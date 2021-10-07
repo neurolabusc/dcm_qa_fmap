@@ -45,5 +45,5 @@
 		0	],
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20210410"
+	"ConversionSoftwareVersion": "v1.0.20211006"
 }

@@ -33,6 +33,7 @@
 	"SpacingBetweenSlices": 4,
 	"EchoNumber": 2,
 	"RepetitionTime": 0.0038045,
+	"MTState": false,
 	"FlipAngle": 12,
 	"CoilString": "MULTI COIL",
 	"PercentPhaseFOV": 100,
@@ -53,5 +54,5 @@
 		0	],
 	"InPlanePhaseEncodingDirectionDICOM": "ROW",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20210410"
+	"ConversionSoftwareVersion": "v1.0.20211006"
 }

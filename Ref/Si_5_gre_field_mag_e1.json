@@ -46,7 +46,9 @@
 	"ReceiveCoilName": "HeadNeck_20",
 	"ReceiveCoilActiveElements": "HE3,4;NE1,2",
 	"PulseSequenceDetails": "%SiemensSeq%\\gre_field_mapping",
+	"CoilCombinationMethod": "Sum of Squares",
 	"ConsistencyInfo": "N4_VE11C_LATEST_20160120",
+	"MatrixCoilMode": "SENSE",
 	"MultibandAccelerationFactor": 2,
 	"PercentPhaseFOV": 100,
 	"PercentSampling": 100,
@@ -100,7 +102,8 @@
 		0,
 		1,
 		0	],
+	"ImageOrientationText": "Tra",
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20210410"
+	"ConversionSoftwareVersion": "v1.0.20211006"
 }

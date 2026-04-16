@@ -1,7 +1,7 @@
 {
 	"Modality": "MR",
 	"MagneticFieldStrength": 3,
-	"ImagingFrequency": 127.764,
+	"ImagingFrequency": 127.763573,
 	"Manufacturer": "Philips",
 	"ManufacturersModelName": "Achieva dStream",
 	"InstitutionName": "Vanderbilt Health and williamson",
@@ -9,7 +9,7 @@
 	"InstitutionAddress": "1161 21st Ave South",
 	"DeviceSerialNumber": "17240",
 	"StationName": "mr3tb",
-	"BodyPartExamined": "BRAIN",
+	"BodyPart": "BRAIN",
 	"PatientPosition": "HFS",
 	"SoftwareVersions": "5.3.0\\5.3.0.3",
 	"MRAcquisitionType": "3D",
@@ -18,7 +18,8 @@
 	"ScanningSequence": "RM",
 	"SequenceVariant": "SS",
 	"ScanOptions": "OTHER",
-	"ImageType": ["ORIGINAL", "PRIMARY", "T1", "MIXED", "REAL", "FIELDMAPHZ"],
+	"PulseSequenceName": "FFE",
+	"ImageType": ["ORIGINAL", "PRIMARY", "T1", "MIXED", "FIELDMAPHZ"],
 	"SeriesNumber": 801,
 	"AcquisitionTime": "15:25:9.020000",
 	"AcquisitionNumber": 8,
@@ -31,6 +32,10 @@
 	"Units": "Hz",
 	"SliceThickness": 4,
 	"SpacingBetweenSlices": 4,
+	"TablePosition": [
+		0,
+		0,
+		0.3	],
 	"EchoNumber": 2,
 	"RepetitionTime": 0.0038045,
 	"MTState": false,
@@ -39,6 +44,8 @@
 	"PercentPhaseFOV": 100,
 	"PercentSampling": 78.5398,
 	"PhaseEncodingSteps": 64,
+	"FrequencyEncodingSteps": 64,
+	"PhaseEncodingStepsOutOfPlane": 32,
 	"AcquisitionMatrixPE": 64,
 	"ReconMatrixPE": 64,
 	"WaterFatShift": 0.140136,
@@ -53,6 +60,7 @@
 		1,
 		0	],
 	"InPlanePhaseEncodingDirectionDICOM": "ROW",
+	"BidsGuess": ["fmap","_acq-SSRMFFE_run-801_fieldmap"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20211006"
+	"ConversionSoftwareVersion": "v1.0.20260416"
 }

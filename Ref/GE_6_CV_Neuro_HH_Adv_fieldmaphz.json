@@ -5,6 +5,7 @@
 	"Manufacturer": "GE",
 	"ManufacturersModelName": "SIGNA Architect",
 	"InstitutionName": "Bay6 NOT FOR DIAGNOSTIC USE",
+	"InstitutionalDepartmentName": "None",
 	"DeviceSerialNumber": "0000000LXBAY6NET",
 	"StationName": "GEHCBAY6",
 	"BodyPart": "BRAIN",
@@ -18,7 +19,7 @@
 	"ScanningSequence": "RM",
 	"SequenceVariant": "NONE",
 	"ScanOptions": "VB_GEMS",
-	"PulseSequenceName": "B0rf",
+	"SequenceName": "B0rf",
 	"ImageType": ["ORIGINAL", "PRIMARY", "OTHER", "FIELDMAPHZ"],
 	"SeriesNumber": 6,
 	"AcquisitionNumber": 1,
@@ -45,7 +46,9 @@
 	"AcquisitionMatrixPE": 128,
 	"ReconMatrixPE": 128,
 	"ParallelReductionFactorInPlane": 2,
+	"ParallelReductionFactorOutOfPlane": 1,
 	"EffectiveEchoSpacing": 0.00114293,
+	"AcquisitionDuration": 52.9,
 	"TotalReadoutTime": 0.145152,
 	"PixelBandwidth": 488.281,
 	"PhaseEncodingAxis": "j",
@@ -59,5 +62,5 @@
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"BidsGuess": ["fmap","_acq-B0mapp2_fieldmap"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20260416"
+	"ConversionSoftwareVersion": "v1.0.20260620"
 }

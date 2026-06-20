@@ -5,6 +5,7 @@
 	"Manufacturer": "GE",
 	"ManufacturersModelName": "SIGNA Master",
 	"InstitutionName": "Bay 9B NOT FOR DIAGNOSTIC USE",
+	"InstitutionalDepartmentName": "None",
 	"DeviceSerialNumber": "000000LXBAY9BNET",
 	"StationName": "GEHCGEHC",
 	"BodyPart": "BRAIN",
@@ -17,7 +18,7 @@
 	"ScanningSequence": "RM",
 	"SequenceVariant": "NONE",
 	"ScanOptions": "VB_GEMS",
-	"PulseSequenceName": "B0map",
+	"SequenceName": "B0map",
 	"ImageType": ["ORIGINAL", "PRIMARY", "OTHER", "MAGNITUDE"],
 	"SeriesNumber": 2,
 	"AcquisitionTime": "17:38:27.000000",
@@ -43,7 +44,9 @@
 	"AcquisitionMatrixPE": 128,
 	"ReconMatrixPE": 128,
 	"ParallelReductionFactorInPlane": 2,
+	"ParallelReductionFactorOutOfPlane": 1,
 	"EffectiveEchoSpacing": 0.00049011,
+	"AcquisitionDuration": 211.3,
 	"TotalReadoutTime": 0.062244,
 	"PixelBandwidth": 488.281,
 	"PhaseEncodingAxis": "j",
@@ -57,5 +60,5 @@
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"BidsGuess": ["fmap","_acq-B0mapp2_magnitude"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20260416"
+	"ConversionSoftwareVersion": "v1.0.20260620"
 }

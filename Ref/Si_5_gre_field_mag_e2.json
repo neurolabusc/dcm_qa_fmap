@@ -19,6 +19,7 @@
 	"ProtocolName": "gre_field_mag",
 	"ScanningSequence": "GR",
 	"SequenceVariant": "SP",
+	"PulseSequenceType": "Spoiled Gradient Echo",
 	"SequenceName": "*fm2d2r",
 	"ImageType": ["ORIGINAL", "PRIMARY", "M", "ND", "MAGNITUDE"],
 	"NonlinearGradientCorrection": false,
@@ -35,8 +36,8 @@
 	"EchoNumber": 2,
 	"EchoTime": 0.00765,
 	"RepetitionTime": 0.4,
+	"SpoilingState": true,
 	"FlipAngle": 60,
-	"PartialFourier": 1,
 	"BaseResolution": 64,
 	"ShimSetting": [
 		6768,
@@ -60,6 +61,8 @@
 	"PhaseEncodingSteps": 64,
 	"AcquisitionMatrixPE": 64,
 	"ReconMatrixPE": 64,
+	"ParallelReductionFactorInPlane": 1,
+	"ParallelReductionFactorOutOfPlane": 1,
 	"PixelBandwidth": 260,
 	"DwellTime": 3e-05,
 	"PhaseEncodingDirection": "j-",
@@ -111,5 +114,5 @@
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"BidsGuess": ["fmap","_acq-fm2_magnitude2"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20260416"
+	"ConversionSoftwareVersion": "v1.0.20260620"
 }

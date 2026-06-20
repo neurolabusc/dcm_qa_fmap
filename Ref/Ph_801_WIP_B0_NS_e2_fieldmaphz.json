@@ -18,10 +18,10 @@
 	"ScanningSequence": "RM",
 	"SequenceVariant": "SS",
 	"ScanOptions": "OTHER",
-	"PulseSequenceName": "FFE",
+	"SequenceName": "FFE",
 	"ImageType": ["ORIGINAL", "PRIMARY", "T1", "MIXED", "FIELDMAPHZ"],
 	"SeriesNumber": 801,
-	"AcquisitionTime": "15:25:9.020000",
+	"AcquisitionTime": "15:25:09.020000",
 	"AcquisitionNumber": 8,
 	"PhilipsRWVSlope": 0.2442,
 	"PhilipsRWVIntercept": -500,
@@ -39,6 +39,7 @@
 	"EchoNumber": 2,
 	"RepetitionTime": 0.0038045,
 	"MTState": false,
+	"SpoilingState": false,
 	"FlipAngle": 12,
 	"CoilString": "MULTI COIL",
 	"PercentPhaseFOV": 100,
@@ -48,9 +49,13 @@
 	"PhaseEncodingStepsOutOfPlane": 32,
 	"AcquisitionMatrixPE": 64,
 	"ReconMatrixPE": 64,
+	"ParallelReductionFactorInPlane": 1,
+	"ParallelReductionFactorOutOfPlane": 1,
 	"WaterFatShift": 0.140136,
 	"EstimatedEffectiveEchoSpacing": 2.56032e-06,
 	"EstimatedTotalReadoutTime": 0.0001613,
+	"AcquisitionDuration": 15.18,
+	"NumberOfKSpaceTrajectories": 1992,
 	"PixelBandwidth": 3099.81,
 	"ImageOrientationPatientDICOM": [
 		1,
@@ -62,5 +67,5 @@
 	"InPlanePhaseEncodingDirectionDICOM": "ROW",
 	"BidsGuess": ["fmap","_acq-SSRMFFE_run-801_fieldmap"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20260416"
+	"ConversionSoftwareVersion": "v1.0.20260620"
 }

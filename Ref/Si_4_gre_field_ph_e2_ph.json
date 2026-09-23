@@ -24,7 +24,7 @@
 	"ImageType": ["ORIGINAL", "PRIMARY", "P", "ND", "PHASE"],
 	"NonlinearGradientCorrection": false,
 	"SeriesNumber": 4,
-	"AcquisitionTime": "14:03:01.257500",
+	"AcquisitionTime": "14:03:01.057500",
 	"AcquisitionNumber": 1,
 	"SliceThickness": 3,
 	"SpacingBetweenSlices": 3.6,
@@ -117,5 +117,5 @@
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"BidsGuess": ["fmap","_acq-fm2_phasediff"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20260620"
+	"ConversionSoftwareVersion": "v1.0.20260915"
 }
